@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+   <script src="script.js"></script>
+    <script>
+      
+     function button(){
+           alert("You are logged in")
+           window.open("http://127.0.0.1:5500/games.html")
+           };
+           </script>
+           <script>
+           function LogIn(){
+           location.replace("http://127.0.0.1:5500/login.html")
+          
+           };
+           </script> 
+      <script>
+          function Register(){
+              location.replace("http://127.0.0.1:5500/register.html")
+          }
+      </script>
+  
+</head>
+<body>
+    <img src="./2901167.png" alt="logo" width="200" height="80" class="center">
+    <div class="navbar">
+  <a href="./index.html">Home</a>
+    <a href="./games.html">Games</a>
+    <a href="./aboutus.html">About Us</a>
+    <a href="./contactus.html">Contact Us</a>
+    <a href="./gallery.html">Gallery</a>
+    <button onclick="LogIn()" >Log In</button>
+    <button onclick="Register()">Register</button>
+    </div>
+    <form action="action_page">
+        <div class="container">
+          <h1>Log into Casino Games</h1>
+          <p> Log In</p>
+          
+          <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" >
+    <br>
+    <label for="password"><b>Password</b></label>
+    <br>
+    <input type="password" placeholder="Enter Password" name="password" id="password" >
+   
+    <button onclick=  "button()" id="loginButton">Log In</button>
+
+    </div>
+    </form>
+    </body>

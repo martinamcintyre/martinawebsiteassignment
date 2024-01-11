@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  
+   <script src="./jquery-3.7.1.min.js"></script>
+   <script src="./java.js"></script>
+   <script>function LogIn(){
+    location.replace("http://127.0.0.1:5500/login.html")
+   
+    };</script>
+    <script>
+        function Register(){
+            location.replace("http://127.0.0.1:5500/register.html")
+        }
+    </script>
+</head>
+<body>
+    <img src="./2901167.png" alt="logo" width="200" height="80" class="center">
+    <div class="navbar">
+  <a href="./assigment.html">Home</a>
+    <a href="./games.html">Games</a>
+    <a href="./aboutus.html">About Us</a>
+    <a href="./contactus.html">Contact Us</a>
+     <a href="./gallery.html">Gallery</a>
+    
+     <button onclick="LogIn()" >Log In</button>
+     <button onclick="Register()">Register</button>
+    </div>
+
+    <div class="col">
+        <div class="hide-md-lg">
+          <h1> Register Into Casino Games</h1>
+        </div>
+      
+        <label for="name"><b>Name</b></label>
+        <input id=name type="text" name="Name" placeholder="Name">
+        <label for="surname"><b>Surname</b></label>
+        <input  id=surname type="text" name="Surname" placeholder="Surname" >
+        <label for="email"><b>Email</b></label>
+        <input  id=email type="text" placeholder="Enter Email" name="email" id="email" >
+        <br>
+<label for="number"><b>Number</b></label>
+<input id=phone type="text" placeholder="Enter Number" name="number" id="number" >
+        <br>
+      
+        <button onclick=  "Register()"  id="loginButton">Register</button>
+
+      </div>
